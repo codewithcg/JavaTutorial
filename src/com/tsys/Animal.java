@@ -2,14 +2,17 @@ package com.tsys;
 
 public class Animal {
 	
-	String xyz;
-	
-	 public Animal() {
-			System.out.println("Hey I am in a Animal Constructor, default is gone!!");
-		}
-	
+	String xyz ;
 	String color;
 	int size;
+	
+	 public Animal() {
+		 
+		this.xyz = "Text"; 
+		System.out.println("Hey I am in a Animal Constructor, default is gone!!");
+		
+		}
+		
 		
 	public void sleep() {
 		System.out.println("Lets sleep");
@@ -32,5 +35,7 @@ public class Animal {
 	 public Animal(int abc) {
 			System.out.println("Hey I am in a Animal Constructor, default is gone!!");
 		}
+	 
+		
 
 }
