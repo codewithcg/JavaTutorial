@@ -15,7 +15,6 @@ public class Ifelse {
 
 		else if (g == 40) {
 			System.out.println("I am 20 ");
-
 		}
 
 		else if (g < 10) {
