@@ -14,7 +14,5 @@ public class While {
 
 			x++;
 		}
-
 	}
-
 }

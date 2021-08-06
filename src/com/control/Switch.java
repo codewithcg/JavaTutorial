@@ -8,7 +8,7 @@ public class Switch {
 
 		// System.out.println(x[0]);
 
-		String city = "Blr";
+		String city = "Mumbai";
 
 		switch (city) {
 

@@ -11,7 +11,7 @@ public class ForLoop {
 
 		// We are allowing bonus to people less 10 years of experience
 
-		for (int x = 1; x < 1; x++) {
+		for (int x = 1; x < 10; x++) {
 
 			System.out.println("Number is : " + x);
 
