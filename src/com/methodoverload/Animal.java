@@ -1,14 +1,6 @@
-package com.Inheritence;
+package com.methodoverload;
 
 public class Animal {
-
-	public Animal() {
-		System.out.println("Animal: I an in parameterless constructor");
-	}
-
-	public Animal(String ani) {
-		System.out.println(ani + "- Animal: I an in parameterized constructor");
-	}
 
 	String colour, name;
 	int size;
