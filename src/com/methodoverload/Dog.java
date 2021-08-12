@@ -12,6 +12,10 @@ public class Dog {
 		System.out.println(str + " - lakshmi: I am in second bark");
 	}
 
+	public void bark(String str, String xyz) {
+		System.out.println(str + " - lakshmi: I am in second bark");
+	}
+
 	public void bark(String str, int x) {
 		System.out.println(str + " - lakshmi: I am in second bark : " + x);
 	}

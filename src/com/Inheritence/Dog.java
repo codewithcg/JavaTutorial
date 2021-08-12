@@ -14,6 +14,12 @@ public class Dog extends Animal {
 
 	}
 
+	public Dog(String doggy, int ds) {
+		super("Annie");
+		System.out.println(doggy + "- Dog: I an in parameterized constructor");
+
+	}
+
 	public void bark() {
 		System.out.println("Child: I am in Dog bark");
 	}
@@ -24,7 +30,7 @@ public class Dog extends Animal {
 
 	@Override
 	public void hunt() {
-		System.out.println("Child: I am in Dog Hunt");
+		System.out.println("Dog: I am in Dog Hunt");
 	}
 
 	public static void main(String[] args) {
@@ -34,6 +40,7 @@ public class Dog extends Animal {
 
 		Dog dg = new Dog();
 		dg.hunt();
+		dg.sleep();
 
 		System.out.println("======================");
 

@@ -1,0 +1,12 @@
+
+Polymorphism - 
+Definition: same action in multiple ways => method overloading & method overriding
+
+Compile time polymorphism => method overloading
+Run time polymorphism => method overriding (when parent is the reference and child is the object)
+
+Binding:
+Static binding or Early binding => methods are static (compile time )
+Dynamic binding Or Late Binding => methods are not static (run time )
+
+
