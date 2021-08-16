@@ -1,0 +1,641 @@
+1. Which of the following is a type of polymorphism in Java?
+a) Compile time polymorphism
+b) Execution time polymorphism
+c) Multiple polymorphism
+d) Multilevel polymorphism
+
+Ans a
+================
+3. When does method overloading is determined?
+a) At run time
+b) At compile time
+c) At coding time
+d) At execution time
+
+
+Answer: b
+================
+4. When Overloading does not occur?
+a) More than one method with same name but different method signature and different number or type of parameters
+b) More than one method with same name, same signature but different number of signature
+c) More than one method with same name, same signature, same number of parameters but different type
+d) More than one method with same name, same number of parameters and type but different signature
+
+Answer: d
+==================
+10. Method overriding is combination of inheritance and polymorphism?
+a) True
+b) false
+
+Answer: a
+====================
+3. Which of the following is a valid declaration of an object of class Box?
+a) Box obj = new Box();
+b) Box obj = new Box;
+c) obj = new Box();
+d) new Box obj;
+
+Answer: a
+=======================
+5. Which of these statement is incorrect?
+a) Every class must contain a main() method
+b) Applets do not require a main() method at all
+c) There can be only one main() method in a program
+d) main() method must be made public
+
+Answer: a
+======================
+What will be the output of the following Java program?
+
+class main_class 
+    {
+        public static void main(String args[])
+        {
+            int x = 9;
+            if (x == 9) 
+            { 
+                int x = 8;
+                System.out.println(x);
+            }
+        } 
+    }
+
+a) 9
+b) 8
+c) Compilation error
+d) Runtime error
+
+Answer: c
+Explanation: Two variables with the same name can’t be created in a class.
+========================
+What will be the output of the following Java program?
+
+ class box 
+    {
+        int width;
+        int height;
+        int length;
+    } 
+    class mainclass 
+    {
+        public static void main(String args[]) 
+        {        
+            box obj1 = new box();
+            box obj2 = new box();
+            obj1.height = 1;
+            obj1.length = 2;
+            obj1.width = 1;
+            obj2 = obj1;
+            System.out.println(obj2.height);
+        } 
+    }
+
+a) 1
+b) 2
+c) Runtime error
+d) Garbage value
+
+Answer: a
+=========================
+
+ What will be the output of the following Java program?
+
+   class box 
+   {
+        int width;
+        int height;
+        int length;
+   } 
+    class mainclass 
+    {
+        public static void main(String args[]) 
+        {        
+            box obj = new box();
+            System.out.println(obj);
+        } 
+    }
+a) 0
+b) 1
+c) Runtime error
+d) classname@hashcode in hexadecimal form
+
+Ans: d
+==================
+1. What is the return type of a method that does not return any value?
+a) int
+b) float
+c) void
+d) double
+
+Answer: c
+=================
+
+2. What is the process of defining more than one method in a class differentiated by method signature?
+a) method overriding
+b) method overloading
+c) method doubling
+d) None of the mentioned
+
+Answer: b
+=====================
+Which of the following is a method having same name as that of it’s class?
+
+a) finalize
+b) delete
+c) class
+d) constructor
+
+Answer: d
+=====================
+4. Which method can be defined only once in a program?
+a) main method
+b) finalize method
+c) static method
+d) private method
+View Answer
+
+Answer: a
+=======================
+ What will be the output of the following Java program?
+
+class box 
+    {
+        int width;
+        int height;
+        int length;
+        int volume;
+        void volume(int height, int length, int width) 
+        {
+             volume = width*height*length;
+        } 
+    }    
+    class Prameterized_method
+    {
+        public static void main(String args[])
+        {
+            box obj = new box();
+            obj.height = 1;
+            obj.length = 5;
+            obj.width = 5;
+            obj.volume(3,2,1);
+            System.out.println(obj.volume);        
+        } 
+     }
+	 
+a) 0
+b) 1
+c) 6
+d) 25
+
+Answer: c
+=======================
+What will be the output of the following Java program?
+
+    class equality 
+    {
+        int x;
+        int y;
+        boolean isequal()
+        {
+            return(x == y);  
+        } 
+    }    
+    class Output 
+    {
+        public static void main(String args[])
+        {
+            equality obj = new equality();
+            obj.x = 5;
+            obj.y = 5;
+            System.out.println(obj.isequal());
+        } 
+    }
+a) false
+b) true
+c) 0
+d) 1
+
+Answer: b
+=======================
+What will be the output of the following Java program?
+
+    class equality 
+    {
+        int x;
+        int y;
+        boolean isequal()
+        {
+            return(x == y);  
+        } 
+    }    
+    class Output 
+    {
+        public static void main(String args[])
+        {
+            equality obj = new equality();
+            obj.x = 5;
+            obj.y = 5;
+            System.out.println(obj.isequal());
+        } 
+    }
+a) false
+b) true
+c) 0
+d) 1
+View Answer
+
+Answer: b
+==================
+10. What will be the output of the following Java program?
+
+    class area 
+    {
+        int width;
+        int length;
+        int volume;
+        area() 
+        {
+           width=5;
+           length=6;
+        }
+        void volume() 
+        {
+             volume = width*length*height;
+        } 
+    }    
+    class cons_method 
+    {
+        public static void main(String args[])
+        {
+            area obj = new area();
+            obj.volume();
+            System.out.println(obj.volume);        
+        } 
+    }
+a) 0
+b) 1
+c) 30
+d) error
+View Answer
+
+Answer: d
+Explanation: Variable height is not defined.
+============================
+What would be the behaviour if this() and super() used in a method?
+a) Runtime error
+b) Throws exception
+c) compile time error
+d) Runs successfully
+
+Answer: c
+Explanation: this() and super() cannot be used in a method. This throws compile time error.
+=====================
+3. What is false about constructor?
+a) Constructors cannot be synchronized in Java
+b) Java does not provide default copy constructor
+c) Constructor can have a return type
+d) “this” and “super” can be used in a constructor
+
+Answer: c
+Explanation: The constructor cannot have a return type. It should create and return new objects. Hence it would give a compilation error.
+
+======================
+5. What is true about constructor?
+a) It can contain return type
+b) It can take any number of parameters
+c) It can have any non access modifiers
+d) Constructor cannot throw an exception
+View Answer
+
+Answer: b
+Explanation: Constructor returns a new object with variables defined as in the class. Instance variables are newly created and only one copy of static variables are created.
+=====================
+9. What would be the behaviour if one parameterized constructor is explicitly defined?
+a) Compilation error
+b) Compilation succeeds
+c) Runtime error
+d) Compilation succeeds but at the time of creating object using default constructor, it throws compilation error
+View Answer
+
+Answer: d
+=============================
+1. What is the process of defining two or more methods within same class that have same name but different parameters declaration?
+a) method overloading
+b) method overriding
+c) method hiding
+d) none of the mentioned
+View Answer
+
+Answer: a
+=======================
+2. Which of these can be overloaded?
+a) Methods
+b) Constructors
+c) All of the mentioned
+d) None of the mentioned
+View Answer
+
+Answer: c
+========================
+    class overload 
+    {
+        int x;
+ 	int y;
+        void add(int a) 
+        {
+            x =  a + 1;
+        }
+        void add(int a, int b)
+        {
+            x =  a + 2;
+        }        
+    }    
+    class Overload_methods 
+    {
+        public static void main(String args[])
+        {
+            overload obj = new overload();   
+            int a = 0;
+            obj.add(6);
+            System.out.println(obj.x);     
+        }
+   }
+a) 5
+b) 6
+c) 7
+d) 8
+View Answer
+
+Answer: c
+===========================
+What will be the output of the following Java code?
+
+class overload 
+    {
+        int x;
+ 	int y;
+        void add(int a)
+        {
+            x =  a + 1;
+        }
+        void add(int a , int b)
+        {
+            x =  a + 2;
+        }        
+    }    
+    class Overload_methods 
+    {
+        public static void main(String args[])
+        {
+            overload obj = new overload();   
+            int a = 0;
+            obj.add(6, 7);
+            System.out.println(obj.x);     
+        }
+    }
+	
+a) 6
+b) 7
+c) 8
+d) 9
+View Answer
+
+Answer: c
+============================
+What will be the output of the following Java code?
+
+    class overload 
+    {
+        int x;
+ 	int y;
+        void add(int a)
+        {
+            x =  a + 1;
+        }
+        void add(int a , int b)
+        {
+            x =  a + 2;
+        }        
+    }    
+    class Overload_methods 
+    {
+        public static void main(String args[])
+        {
+            overload obj = new overload();   
+            int a = 0;
+            obj.add(6, 7);
+            System.out.println(obj.x);     
+        }
+    }
+a) 6
+b) 7
+c) 8
+d) 9
+View Answer
+
+Answer: c
+=========================
+8. What will be the output of the following Java code?
+
+   class overload 
+   {
+        int x;
+ 	double y;
+        void add(int a , int b) 
+        {
+            x = a + b;
+        }
+        void add(double c , double d)
+        {
+            y = c + d;
+        }
+        overload() 
+        {
+            this.x = 0;
+            this.y = 0;
+        }        
+    }    
+    class Overload_methods 
+    {
+        public static void main(String args[])
+        {
+            overload obj = new overload();   
+            int a = 2;
+            double b = 3.2;
+            obj.add(a, a);
+            obj.add(b, b);
+            System.out.println(obj.x + " " + obj.y);     
+        }
+   }
+a) 6 6
+b) 6.4 6.4
+c) 6.4 6
+d) 4 6.4
+View Answer
+
+Answer: d
+===========================
+What will be the output of the following Java code?
+
+    class test 
+    {
+        int a;
+        int b;
+        void meth(int i , int j) 
+        {
+            i *= 2;
+            j /= 2;
+        }          
+    }    
+    class Output 
+    {
+        public static void main(String args[])
+        {
+            test obj = new test();
+	    int a = 10;
+            int b = 20;             
+            obj.meth(a , b);
+            System.out.println(a + " " + b);        
+        } 
+    }
+a) 10 20
+b) 20 10
+c) 20 40
+d) 40 20
+View Answer
+
+Answer: a
+=======================
+What will be the output of the following Java code?
+
+    class test 
+    {
+        int a;
+        int b;
+        test(int i, int j) 
+        {
+            a = i;
+            b = j;
+        }
+        void meth(test o) 
+        {
+            o.a *= 2;
+            O.b /= 2;
+        }          
+    }    
+    class Output 
+    {
+        public static void main(String args[])
+        {
+            test obj = new test(10 , 20);
+            obj.meth(obj);
+            System.out.println(obj.a + " " + obj.b);        
+        } 
+    }
+a) 10 20
+b) 20 10
+c) 20 40
+d) 40 20
+View Answer
+
+Answer: b
+==========================
+ Which of this keyword can be used in a subclass to call the constructor of superclass?
+a) super
+b) this
+c) extent
+d) extends
+Answer: a
+===================
+. What is the process of defining a method in a subclass having same name & type signature as a method in its superclass?
+a) Method overloading
+b) Method overriding
+c) Method hiding
+d) None of the mentioned
+View Answer
+
+Answer: b
+=====================
+3. Which of these keywords can be used to prevent Method overriding?
+a) static
+b) constant
+c) protected
+d) final
+View Answer
+
+Answer: d
+=======================
+4. Which of these is correct way of calling a constructor having no parameters, of superclass A by subclass B?
+a) super(void);
+b) superclass.();
+c) super.A();
+d) super();
+View Answer
+
+Answer: d
+======================
+ What will be the output of the following Java program?
+
+   final class A 
+    {
+         int i;
+    }    
+    class B extends A 
+    {
+        int j;
+        System.out.println(j + " " + i);  
+    }    
+    class inheritance 
+    {
+        public static void main(String args[])
+        {
+            B obj = new B();
+            obj.display();     
+        }
+   }
+a) 2 2
+b) 3 3
+c) Runtime Error
+d) Compilation Error
+View Answer
+
+Answer: d
+=====================
+What will be the output of the following Java program?
+
+    class A 
+    {
+        int i;
+        public void display() 
+        {
+            System.out.println(i);
+        }    
+    }    
+    class B extends A 
+   {
+        int j;
+        public void display() 
+        {
+            System.out.println(j);
+        } 
+    }    
+    class Dynamic_dispatch 
+   {
+        public static void main(String args[])
+        {
+            B obj2 = new B();
+            obj2.i = 1;
+            obj2.j = 2;
+            A r;
+            r = obj2;
+            r.display();     
+        }
+   }
+a) 1
+b) 2
+c) 3
+d) 4
+View Answer
+
+Answer: b
+========================

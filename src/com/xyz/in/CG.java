@@ -2,6 +2,8 @@ package com.xyz.in;
 
 public class CG {
 
+	int g;
+
 	public static void main(String args[]) {
 
 //		String s1 = new String("codewithcg");
