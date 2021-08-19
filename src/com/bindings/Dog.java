@@ -17,10 +17,6 @@ public class Dog extends Animal {
 		System.out.println("Dog: I am in Dog Hunt");
 	}
 
-	public static void run() {
-		System.out.println("Dog: I am running");
-	}
-
 	public static void main(String[] args) {
 
 		Animal an = new Dog();
@@ -32,9 +28,13 @@ public class Dog extends Animal {
 		dg.run();
 
 		Animal an2 = new Animal();
-		an.run();
+		an2.run();
 
 		// static, private, final
+
+//		ProtectedClass pc = new ProtectedClass();
+//		pc.addTwoNumbers(3, 5);
+//		System.out.println(pc.abc);
 
 	}
 

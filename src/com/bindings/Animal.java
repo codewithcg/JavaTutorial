@@ -17,7 +17,7 @@ public class Animal {
 		System.out.println("Animal: I am sleeping");
 	}
 
-	public static void run() {
+	protected void run() {
 		System.out.println("Animal: I am running");
 	}
 }
