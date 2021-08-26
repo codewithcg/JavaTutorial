@@ -10,7 +10,7 @@ public class ArrayListClass {
 
 		int[] ar = { 1, 2, 3, 54 }; // array
 
-		ArrayList<Integer> aint = new ArrayList<Integer>();
+		ArrayList<Integer> aint = new ArrayList<Integer>(4);
 		ArrayList<String> astr = new ArrayList<String>();
 		ArrayList astrg = new ArrayList();
 
@@ -31,6 +31,7 @@ public class ArrayListClass {
 		System.out.println(aint);
 
 		aint.remove(17); // Not possible, use aint.remove(Integer.valueOf(17));
+		// aint.remove(Integer.valueOf(17));
 		System.out.println(aint);
 
 	}
